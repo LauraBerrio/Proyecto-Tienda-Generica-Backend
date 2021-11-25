@@ -20,14 +20,22 @@ public class Usuarios {
 	private String usuario;
 	@Column(name = "password")
 	private String password;
-	@Column(name = "ciudad")
-	private String ciudad;
+	@Column(name = "id_ciudad")
+	private int idCiudad;
+	@Column(name="rol")
+	private String rol;
 	
-	public String getCiudad() {
-		return ciudad;
+	public String getRol() {
+		return rol;
 	}
-	public void setCiudad(String ciudad) {
-		this.ciudad = ciudad;
+	public void setRol(String rol) {
+		this.rol = rol;
+	}	
+	public int getIdCiudad() {
+		return idCiudad;
+	}
+	public void setIdCiudad(int idCiudad) {
+		this.idCiudad = idCiudad;
 	}
 	public long getCedulaUsuario() {
 		return cedulaUsuario;

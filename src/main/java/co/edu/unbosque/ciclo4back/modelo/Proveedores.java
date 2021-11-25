@@ -14,8 +14,8 @@ public class Proveedores {
 	private long nitProveedor;
 	@Column(name="nombre_proveedor")
 	private String nombreProveedor;
-	@Column(name="ciudad_proveedor")
-	private String ciudadProveedor;
+	@Column(name="id_ciudad")
+	private int idCiudad;
 	@Column(name="direccion_proveedor")
 	private String direccionProveedor;
 	@Column(name="telefono_proveedor")
@@ -34,11 +34,11 @@ public class Proveedores {
 	public void setNombreProveedor(String nombreProveedor) {
 		this.nombreProveedor = nombreProveedor;
 	}
-	public String getCiudadProveedor() {
-		return ciudadProveedor;
+	public int getIdCiudad() {
+		return idCiudad;
 	}
-	public void setCiudadProveedor(String ciudadProveedor) {
-		this.ciudadProveedor = ciudadProveedor;
+	public void setIdCiudad(int idCiudad) {
+		this.idCiudad = idCiudad;
 	}
 	public String getDireccionProveedor() {
 		return direccionProveedor;

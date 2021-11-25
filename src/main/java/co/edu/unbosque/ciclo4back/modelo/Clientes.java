@@ -20,15 +20,16 @@ public class Clientes {
 	 private String nombreCliente;
 	@Column(name="telefono_cliente")
 	 private String telefonoCliente;
-	@Column(name = "ciudad")
-	private String ciudad;
+	@Column(name = "id_ciudad")
+	private int idCiudad;
 	
-	public String getCiudad() {
-		return ciudad;
+	
+	public int getIdCiudad() {
+		return idCiudad;
 	}
-	public void setCiudad(String ciudad) {
-		this.ciudad = ciudad;
-	}
+	public void setIdCiudad(int idCiudad) {
+		this.idCiudad = idCiudad;
+	}	
 	public long getCedulaCliente() {
 		return cedulaCliente;
 	}
